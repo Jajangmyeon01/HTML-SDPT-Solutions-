@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tables </title>
+        <!--CSS-->
+        <style>
+            table,tr,th,td{
+                border-width: 1px;
+                border-color: skyblue;
+                border-style: solid;
+            }
+            .center-align{
+                text-align: center;
+            }
+            caption{
+                text-align: center;
+                caption-side: top;
+                color: goldenrod;
+            }
+            thead{
+                background-color:lavender;
+            }
+            tbody{
+                background-color:azure;
+            }
+            tfoot{
+                background-color:cornsilk;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Table Element-->
+        <table>
+        <!--Caption Element-->
+        <caption><strong>(Table Element)</strong></caption>
+            <!--Thead Element-->
+            <thead>
+                <tr>
+                    <th>Fruits</th>
+                    <th>Cars</th>
+                    <th>Phones</th>
+                </tr>
+            </thead>
+            <!--Tbody Element-->
+            <tbody>
+                <tr>
+                    <td>Banana</td>
+                    <td>Chevrolet</td>
+                    <td>Samsung</td>
+                </tr>
+                <tr>
+                    <td>Lychee</td>
+                    <td>Mercedes</td>
+                    <td>Xioami</td>
+                </tr>
+            </tbody>
+        </table> <br> <br> <br>
+
+        <table>
+            <caption><strong>(Sample Table)</strong></caption>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Grade/Yr.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Gen</td>
+                    <td>BSIT</td>
+                    <td>3rd Year</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Anna</td>
+                    <td>BSCS</td>
+                    <td>2nd Year</td>
+                </tr>
+            </tbody>
+        </table> <br> <br> <br>
+
+        <!--Merge Cells-->
+        <table>
+            <caption><strong>(Merge Cells)</strong></caption>
+ 
+                <tr>
+                    <th rowspan="2">Names</th>
+                    <th colspan="5">Student Records</th>
+                    <td rowspan="6" colspan="2">Descriptions: </td>
+                </tr>
+                <tr>
+                    <td>Web Prog</td>
+                    <td>Data Structure</td>   
+                    <td>Discrete Math</td>
+                    <td>OOP</td>
+                    <td>Database</td>
+                </tr>
+                <tr>
+                    <td>Gen Exus Vergara</td>
+                    <td class="center-align">95.88</td>
+                    <td class="center-align">89.90</td>
+                    <td class="center-align">85.53</td>
+                    <td class="center-align">97.99</td>
+                    <td class="center-align">90.00</td>
+                </tr>
+                <tr>
+                    <td>Anna Kendrick</td>
+                    <td class="center-align">90.21</td>
+                    <td class="center-align">98.42</td>
+                    <td class="center-align">98.00</td>
+                    <td class="center-align">86.32</td>
+                    <td class="center-align">93.73</td>
+                </tr>
+                <!--Tfoot Element-->
+                <tfoot>
+                        <tr>
+                            <td colspan="7" rowspan="5">Comments: </td>  
+                        </tr>
+                </tfoot>   
+        </table>
+    </body>
+</html>
