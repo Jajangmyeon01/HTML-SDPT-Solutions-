@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Forms </title>
+    </head>
+    <body>
+        <form target="_blank">
+            <!--Input type Elements-->
+                <strong> -- Input type Attributes --</strong> <br> <br>
+                <em>Disabled :</em> <input type="text" disabled> <br>
+                <em>Value :</em> <input type="text" value="This is the value"> <br>
+                <em>ReadOnly :</em> <input type="text" readonly value="It can't be typed"> <br>
+                <em>Required :</em> <input type="text" required> 
+                <em>Submit :</em> <input type="submit"> <br>
+                <em>Placeholder :</em> <input type="text" placeholder="Enter your Name"> <br>
+                <em>MinLength :</em> <input type="text" minlength="3" required>
+                <input type="submit">     
+                <em>MaxLength :</em> <input type="text" maxlength="5" required>
+                <input type="submit"> <br> <br>
+
+                <input type="email" required size="20" placeholder="Enter your Email"> <br>
+                <input type="password" required size="30" placeholder="Enter your Password"> <br>
+                <input type="submit"> <br> <br>
+
+                <em>Number with step of 5: </em><input type="number" step="5"> <br>
+                <em>Telephone :</em> <input type="tel" placeholder="Telephone"> <br>
+                <em>Search :</em> <input type="search" placeholder="Search"> <br>
+                <em>URL :</em><input type="url" placeholder="URL"> <br>
+                <input type="submit"> <br> <br>
+
+                <!--Input type Date/Time Default Formats-->
+                <strong> -- Input type Date/Time Default Formats -- </strong> <br> <br>
+                <em>Date :&nbsp;</em><input type="date"> <br>
+                <em>DateTime-Local :&nbsp;</em><input type="datetime-local"> <br>
+                <em>Week :&nbsp;</em><input type="week"> <br>
+                <em>Month :&nbsp;</em><input type="month"> <br>
+                <em>Time :&nbsp;</em> <input type="time"> <br> <br>
+
+                <!--Default Value-->
+                <em>Default Value Date :&nbsp;</em><input value="10-01-2002"><br>
+                <em>Date Min:&nbsp;</em><input type="date" min="2024-03-04"> <br>
+                <em>Date Max:&nbsp;</em><input type="date" max="2024-03-04"> <br> <br>
+                
+                <!--Input Element Button Types-->
+                <strong> --Input Element Button Types-- </strong> <br> <br>
+                <em>File :&nbsp;</em> <input type="file" accept="img/*" multiple> <br>
+
+                <em>Checkbox :&nbsp;</em> <input id="apple" type="checkbox"> 
+                <label for="apple">Apple</label>
+                <input id="banana" type="checkbox"> 
+                <label for="banana">Banana</label> <br>
+
+                <em>Default Checkedbox :&nbsp;</em> <input id="lychee" type="checkbox" checked> 
+                <label for="lychee">Lychee</label> 
+                <input id="orange" type="checkbox" checked> 
+                <label for="orange">Orange</label> <br>
+
+                <em>Radio Button :&nbsp;</em> <input id="yes" name="answer" type="radio"> 
+                <label for="yes">Yes</label> 
+                <input id="no" name="answer" type="radio"> 
+                <label for="no">No</label> 
+                <input id="maybe" name="answer" type="radio"> 
+                <label for="maybe">Maybe</label> <br>
+                <em>Button :&nbsp;</em><input type="button" value="Click Me!"> <br> <br>
+
+                <em>Reset :&nbsp;</em><br>
+                <input type="text"> <br>
+                <input type="password"> <br>
+                <input type="reset" value="Reset"> <br>
+
+                <em>Range :&nbsp;</em><input type="range" min="0" max="100" value="75"> <br>
+                <em>Color :&nbsp;</em><input type="color" value="#ffffff"> <br> <br>
+
+                <em>Text Area :&nbsp;</em> <br>
+                <textarea rows="10" cols="100" maxlength="500">This is a default value.</textarea> <br> <br>
+
+                <em>Select :&nbsp; Types of Cars </em>
+                <select name="Cars">
+                    <option value="sedan">Sedan</option>
+                    <option value="hatchback">Hatchback</option>
+                    <option value="roadster">Roadster</option>
+                    <option value="limousine">Limousine</option>
+                    <option value="musclecar">Muscle Car</option>
+                    <option value="sportcar">Sport Car</option>
+                    <option value="supercar">Super Car</option>
+                    <option value="suv">SUV</option>
+                    <option value="pickup">Pick Up</option>
+                    <option value="van">Van</option>
+                    <option value="minivan">Mini Van</option>
+                    <option value="minibus">Mini Bus</option>
+                    <option value="campervan">Campervan</option>
+                </select> <br> <br>
+                
+                <em>Option Group :&nbsp; Leader and Groupmates </em><select name="Groups">
+                <optgroup label = "Leaders">
+                    <option value ="gen">Gen</option>
+                    <option value ="anna">Anna</option>
+                </optgroup>
+                <optgroup label = "Members">
+                    <option value ="justin">Justin</option>
+                    <option value ="zooey">Zooey</option>
+                </optgroup>
+                </select> <br> <br>
+
+                <em>Label :&nbsp;</em> <label for="fullname"> Full Name:</label>
+                <input type="text">
+                <label for="lastname"> Last Name:</label>
+                <input type="text">
+    </body>
+</html>
